@@ -1,8 +1,21 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T00:00:00+09:00",
-  "notes": "試作品用の空データ。実作業ログや売上を捏造しないため、確認された最新イベントは未登録です。",
-  "records": [],
+  "updatedAt": "2026-10-09T23:06:23+00:00",
+  "notes": "GitHub Issue上の所有者の自己申告。作業実施や公開をAPIで検証したものではありません。数値KPIは別途確認が必要。",
+  "records": [
+    {
+      "id": "github-issue-1",
+      "business": "bunko",
+      "role": "COO",
+      "summary": "AI会社ライブ v0.3をGitHub Pagesで公開。\n\n・AI役員9人のアニメーションを実装\n・2事業の切替機能を実装\n・経営画面を日本語化\n・実績記録フォームを設置\n・GitHub Actionsの連携ファイルを配置\n\n公開サイトの表示を確認済み。実績ログの自動反映は動作確認前。",
+      "status": "公開（本人申告）",
+      "at": "2026-10-09T23:06:15Z",
+      "source": "github_issue",
+      "verification": "本人申告・未検証",
+      "issueUrl": "https://github.com/kaito2343-1/ai-company-live/issues/1",
+      "evidence": "https://kaito2343-1.github.io/ai-company-live/"
+    }
+  ],
   "metrics": {
     "bunko": {
       "posts": null,
