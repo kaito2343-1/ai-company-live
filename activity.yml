@@ -1,0 +1,66 @@
+name: "AI会社：実績ログ登録"
+description: "入力者の自己申告を公開アクティビティに記録します（ログイン情報や個人情報は書かない）"
+title: "[実績] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 公開される記録です
+        登録するとGitHub Issue本文と活動履歴が全世界に公開されます。機密情報・個人名・顧客名・未公開売上・APIキーを記録しないでください。
+        WorkやAIが実際に動いていることを自動検知するフォームではありません。
+  - type: dropdown
+    id: business
+    attributes:
+      label: 事業
+      options:
+        - "bunko｜ひとり仕事の交渉文庫"
+        - "kakemaru｜かけまる個人ビジネス研究所"
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: 担当役員
+      options:
+        - "CEO｜社長"
+        - "COO｜運営"
+        - "CMO｜集客"
+        - "CPO｜商品"
+        - "CIO｜財務"
+        - "CGO｜成長"
+        - "法務"
+        - "品質"
+        - "調査"
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: 作業状況
+      description: "完了・公開を選ぶ場合も入力内容を自動で検証するものではありません"
+      options:
+        - "企画中"
+        - "制作中"
+        - "確認待ち"
+        - "完成（未公開）"
+        - "公開（本人申告）"
+        - "確認済み（本人申告）"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: 作業内容
+      description: "確認できる事実のみ。記事名や成果物を具体的に"
+      placeholder: "例：noteの記事本文の下書きを作成。まだ公開していない"
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: 成果物URL（任意）
+      description: "https:// で始まる公開URLのみ。空欄でも登録できます"
+      placeholder: "https://..."
+    validations:
+      required: false
