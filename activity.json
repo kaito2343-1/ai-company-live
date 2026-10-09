@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-10T00:00:00+09:00",
+  "notes": "試作品用の空データ。実作業ログや売上を捏造しないため、確認された最新イベントは未登録です。",
+  "records": [],
+  "metrics": {
+    "bunko": {
+      "posts": null,
+      "articles": null,
+      "sales": null,
+      "revenue": null,
+      "updatedAt": "未取得"
+    },
+    "kakemaru": {
+      "posts": null,
+      "articles": null,
+      "sales": null,
+      "revenue": null,
+      "updatedAt": "未取得"
+    }
+  }
+}
